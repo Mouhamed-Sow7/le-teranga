@@ -3,16 +3,23 @@
 }
 .navbar {
   background-color: #9f1b32;
-  width: 100%;
+  /* width: 100%; */
+  /* display: flex; */
 }
 .navbar-nav > li {
   padding: 0 40px;
-  font-size: 1.3rem;
-  margin: 0 auto;
+}
+/* .navbar-brand {
+  position: relative;
+} */
+.logo img {
 }
 .nav-item a {
   color: white;
   font-weight: 400;
+}
+.nav-link {
+  padding: 0 50px;
 }
 
 .box-header-cta {
