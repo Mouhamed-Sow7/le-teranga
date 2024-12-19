@@ -12,14 +12,14 @@
   height: 50px;
 }
 
-.logo{
+/* .logo{
  
   display: inline-block;
   position: relative;
   align-items: center;
-}
+} */
 .logo img{
-  width: 40px;
+  width: 90px;
   height: 40px;
   position: sticky;
   top: -23px;
@@ -38,9 +38,13 @@
 }
 .nav-item a {
   width: 100%;
-  display: inline;
+  /* display: inline; */
+  font-size: 40px;
   color: white;
-  font-weight: 400;
+  font-weight: bold;
+  margin:0 26px;
+  padding: 0 26px;
+
 }
 /*  nav bar lien rigth */
 /* #navbarNav{
@@ -48,6 +52,8 @@
 } */
 .nav-link{
   margin: 0 auto;
+  font-size: 34px;
+  font-weight: bold;
 }
 
 .box-header-cta {
