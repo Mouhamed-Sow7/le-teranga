@@ -42,6 +42,74 @@
   position: relative;
   z-index: 1;
 }
+/* Debut Section galerie */
+.titre-container{
+  background: hsla(0, 0%, 59%, 0.72);
+}
+
+.h1-galerie{
+  color: #a52a2a;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+}
+.slogan-galerie{
+  text-align: center;
+  font-family: "Lora", sans-serif;
+}
+
+.galerie{
+  display: flex ;
+ 
+}
+
+.card{
+  width: 33%;
+  margin: 20px  auto;
+  border: 1px solid #ffd9;
+  box-shadow: 0 0 14px #ffd8;
+  gap: 10px;
+  position: relative;
+   
+}
+.card::after{
+  content: '';
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background: red;
+  top: 0px;
+  left: 26px;
+  translate: (-40%, -50%);
+  z-index: -1;
+  padding: 3px;
+}
+.card:hover{
+  width: 30%;
+  margin: 20px  auto;
+   
+}
+.card img{
+  width: 100%;
+  object-fit: fill;
+}
+@media screen and (max-width:576px) {
+  .card{
+      width: 50%;
+   }
+   .card:hover{
+      width: 49%;
+      margin: 20px  auto;
+       
+   }
+   .card img{
+      width: 100%;
+      object-fit: cover;
+   }
+}
+/*Fi   Section galerie */
 /* section de reservation */
 .reservation h1 {
   color: #9f1b32;
@@ -87,3 +155,5 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* section de men */
