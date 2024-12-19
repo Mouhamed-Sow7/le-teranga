@@ -12,12 +12,6 @@
   height: 50px;
 }
 
-/* .logo{
- 
-  display: inline-block;
-  position: relative;
-  align-items: center;
-} */
 .logo img{
   width: 90px;
   height: 40px;
@@ -25,7 +19,6 @@
   top: -23px;
   left: 0;
 }
-/* pas besoin > li */
 .navbar-nav  {
   justify-content: center;
   align-items: center;
@@ -38,7 +31,6 @@
 }
 .nav-item a {
   width: 100%;
-  /* display: inline; */
   font-size: 40px;
   color: white;
   font-weight: bold;
@@ -46,10 +38,7 @@
   padding: 0 26px;
 
 }
-/*  nav bar lien rigth */
-/* #navbarNav{
-  margin-right: auto;
-} */
+
 .nav-link{
   margin: 0 auto;
   font-size: 34px;
@@ -61,7 +50,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(98vh - 7vh);
-  /* moins la taille du navbar en pixel 56px dont 7vh */
 }
 
 .box-header-cta .content-box {
@@ -71,8 +59,8 @@
   justify-content: flex-start;
   align-items: center;
   height: 91vh;
-  margin: 0 auto; /*pour centrage du contenu*/
-  /* width: 100%; */
+  margin: 0 auto; 
+  
 }
 .title {
   font-size: 102px;
@@ -92,7 +80,6 @@
   justify-content: baseline;
   align-items: center;
   height: 100%;
-  /* width: 50%; */
 }
 
 .left-cta,
@@ -116,7 +103,6 @@
 .btn {
   width: 300px;
   margin: 0 auto;
-  /* pour la taille/largeur du conteneur des cta du header */
 }
 .divider {
   width: 100px;
