@@ -61,7 +61,7 @@
   </nav>
  
   <!-- Hero Section -->
-  <!-- <section class="py-5 text-center d-flex align-items-center hero-section">
+   <section class="py-5 text-center d-flex align-items-center hero-section">
     <div class="container">
       <h1 class="display-1">Le Téranga Resto</h1>
       <p class="lead">Là où goût et tradition sont à la rencontre</p>
@@ -70,14 +70,119 @@
         <a href="#" class="btn btn-primary btn-lg me-2">Réserver <i class="bi bi-arrow-right-circle"></i></a>
         <a href="#" class="btn btn-secondary btn-lg">Commander <i class="bi bi-arrow-right-circle"></i></a>
       </div>
-    </div>
-  </section> -->
-  </div>
-</div>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-</body>
+    </section>
+    <!--la partie de reservation  -->
+    <section class="reservation">
+      <!-- essayer de revoir la partie responsive aussi -->
+      <div class="container">
+        <!-- titre -->
+        <h1 class="text-center display-1">RESERVATION</h1>
+        <p>
+          Une experience culinaire inoubliable inspiré des traditions locales .
+          Nous proposons de repas tres delicieux . Une fois gouter votre appetie
+          sera insatiable
+        </p>
+        <!-- titre -->
+        <!-- _________________________________ -->
+        <!-- une ligne -->
+        <form class="row box-reservation">
+          <!-- colonne 1 de cette row/ligne -->
+          <div class="col col-md-4 col-xl-4 left-box">
+            <img
+              src="assets/img/reservation-img.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- fin de la colonne 1 -->
+          <!--  -->
+          <!-- colonne 2 imbriquant 3 lignes/row.... -->
+          <div class="col col-md-8 col-lg-8 right-box">
+            <!-- premiere row -->
+            <div class="row mb-3">
+              <div class="col col-md col-lg my-2">
+                <input
+                  type="text"
+                  placeholder="Nom et Prenom "
+                  class="form-control form-control-lg"
+                />
+              </div>
+              <div class="col col-md col-lg my-2">
+                <input
+                  type="email"
+                  placeholder="Adresse Email"
+                  class="form-control form-control-lg"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col col-md col-lg my-2">
+                <input
+                  type="tel"
+                  placeholder="Telephone"
+                  class="form-control form-control-lg"
+                />
+              </div>
+              <div class="col col-md col-lg my-2">
+                <select name="select" id="#" class="form-select form-select-lg">
+                  <option
+                    selected
+                    value="1"
+                    aria-placeholder="nombre de personne"
+                  >
+                    nombre
+                  </option>
+                  <option value="1" aria-placeholder="nombre de personne">
+                    une personne
+                  </option>
+                  <option value="2" aria-placeholder="nombre de personne">
+                    deux personnes
+                  </option>
+                  <option value="3" aria-placeholder="nombre de personne">
+                    trois personnes
+                  </option>
+                  <option value="4" aria-placeholder="nombre de personne">
+                    4 personnes
+                  </option>
+                  <option value="4+" aria-placeholder="nombre de personne">
+                    4+
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <!-- fin du second -->
+            <!--  -->
+            <!-- troisieme row -->
+            <div class="row mb-3">
+              <div class="col col-md col-lg my-2">
+                <input
+                  type="date"
+                  placeholder="jj/mm/annee"
+                  class="form-control form-control-lg text-color"
+                />
+              </div>
+              <div class="col col-md col-lg my-2">
+                <input type="time" class="form-control form-control-lg" />
+              </div>
+              <!-- _________ -->
+            </div>
+            <!-- fin troisieme row -->
+            <!-- button -->
+            <div
+              class="d-grid col-5 mt-5 justify-content-center offset-md-3 mx-auto"
+            >
+              <button class="btn-reservation" type="button">RESERVER</button>
+            </div>
+            <!-- fin button -->
+          </div>
+        </form>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

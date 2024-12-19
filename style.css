@@ -45,16 +45,14 @@
 /* section de reservation */
 .reservation h1 {
   color: #9f1b32;
-  font-size: 95px;
-  text-align: center;
-  letter-spacing: 6%;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 3px;
   font-family: "Montserrat", sans-serif;
 }
 .reservation p {
   font-family: "Lora", sans-serif;
   font-size: 20px;
-  letter-spacing: 6%;
+  letter-spacing: 3px;
   text-align: center;
   font-weight: 600;
 }
