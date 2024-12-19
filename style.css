@@ -74,18 +74,7 @@
   position: relative;
    
 }
-.card::after{
-  content: '';
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  background: red;
-  top: 0px;
-  left: 26px;
-  translate: (-40%, -50%);
-  z-index: -1;
-  padding: 3px;
-}
+
 .card:hover{
   width: 30%;
   margin: 20px  auto;
@@ -109,7 +98,7 @@
       object-fit: cover;
    }
 }
-/*Fi   Section galerie */
+/*Fin   Section galerie */
 /* section de reservation */
 .reservation h1 {
   color: #9f1b32;
