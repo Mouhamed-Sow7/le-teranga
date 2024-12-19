@@ -4,20 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-.navbar-nav > li {
-  gap: 50px;
+.navbar-nav {
+  display: flex;
+  gap: 30px; /* Espace entre les éléments */
 }
 
 .navbar {
   background: #9f1b32 !important;
 }
 
-.logo-img {
-  width: 65%;
-}
 .nav-link {
   color: #fff !important;
+  text-transform: uppercase; /* Optionnel : pour styliser les liens */
+  font-weight: 500; /* Optionnel : pour une meilleure lisibilité */
 }
+
 .hero-section {
   position: relative;
   background-image: url(./assets/img/bg-img.jpg) !important;
@@ -42,74 +43,27 @@
   position: relative;
   z-index: 1;
 }
-/* Debut Section galerie */
-.titre-container{
-  background: hsla(0, 0%, 59%, 0.72);
-}
-
-.h1-galerie{
-  color: #a52a2a;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-
-}
-.slogan-galerie{
-  text-align: center;
-  font-family: "Lora", sans-serif;
-}
-
-.galerie{
-  display: flex ;
- 
-}
-
-.card{
-  width: 33%;
-  margin: 20px  auto;
-  border: 1px solid #ffd9;
-  box-shadow: 0 0 14px #ffd8;
-  gap: 10px;
-  position: relative;
-   
-}
-
-.card:hover{
-  width: 30%;
-  margin: 20px  auto;
-   
-}
-.card img{
-  width: 100%;
-  object-fit: fill;
-}
-@media screen and (max-width:576px) {
-  .card{
-      width: 50%;
-   }
-   .card:hover{
-      width: 49%;
-      margin: 20px  auto;
-       
-   }
-   .card img{
-      width: 100%;
-      object-fit: cover;
-   }
-}
-/*Fin   Section galerie */
 /* section de reservation */
 .reservation h1 {
   color: #9f1b32;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-size: 95px;
+  text-align: center;
+  letter-spacing: 6%;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.MENU h1 {
+  color: #9f1b32;
+  font-size: 95px;
+  text-align: center;
+  letter-spacing: 6%;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
 .reservation p {
   font-family: "Lora", sans-serif;
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 6%;
   text-align: center;
   font-weight: 600;
 }
@@ -144,5 +98,102 @@
   justify-content: space-between;
   align-items: center;
 }
+/* Section entre l'introduction et les plats */
+.plats-du-jour {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  color: #8C1538; /* Couleur du texte en #8C1538 */
+}
 
-/* section de men */
+.plats-du-jour h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.plats-du-jour p {
+  font-size: 1.2rem;
+}
+
+/* Disposition des plats */
+.dishes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-color: #9f1b32;
+}
+
+.dish {
+  flex: 1 1 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 19px;
+ 
+}
+
+.dish img {
+  width: 80%;
+  height: 90%;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dish-info {
+  margin-top: 10px;
+}
+
+.dish-info h3, .dish-info p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #8C1538;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a41742;
+}
+@media (max-width: 600px) {
+  .navbar-nav {
+    flex-direction: column; /* Empile les éléments de navigation */
+    gap: 15px; /* Réduit l'espace entre les éléments */
+  }
+
+  .hero-section h1 {
+    font-size: 24px; /* Réduit la taille du texte */
+  }
+
+  .reservation h1 {
+    font-size: 60px; /* Réduit la taille pour les petits écrans */
+  }
+
+  .btn-reservation {
+    padding: 15px; /* Ajuste le padding */
+    font-size: 16px; /* Réduit la taille de la police */
+  }
+
+  .dishes {
+    flex-direction: column; /* Empile les plats verticalement */
+    align-items: center; /* Centre les éléments */
+  }
+
+  .dish {
+    flex: 1 1 100%; /* Les plats prennent toute la largeur */
+    margin-top: 10px; /* Ajuste la marge */
+  }
+
+  .dish img {
+    width: 100%; /* Rend l'image responsive */
+    height: auto; /* Maintient le ratio d'aspect */
+  }
+}
