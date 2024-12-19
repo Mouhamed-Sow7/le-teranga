@@ -83,7 +83,7 @@
       <!-- essayer de revoir la partie responsive aussi -->
       <div class="container">
         <!-- titre -->
-        <h1>RESERVATION</h1>
+        <h1 class="text-center display-1">RESERVATION</h1>
         <p>
           Une experience culinaire inoubliable inspiré des traditions locales .
           Nous proposons de repas tres delicieux . Une fois gouter votre appetie
@@ -106,34 +106,31 @@
           <!-- colonne 2 imbriquant 3 lignes/row.... -->
           <div class="col col-md-8 col-lg-8 right-box">
             <!-- premiere row -->
-            <div class="row mb-3 col">
-              <div class="col col-md col-lg me-2">
+            <div class="row mb-3">
+              <div class="col col-md col-lg my-2">
                 <input
                   type="text"
                   placeholder="Nom et Prenom "
                   class="form-control form-control-lg"
                 />
               </div>
-              <div class="col col-md col-lg">
+              <div class="col col-md col-lg my-2">
                 <input
                   type="email"
                   placeholder="Adresse Email"
                   class="form-control form-control-lg"
                 />
               </div>
-              <!-- fin du premier row -->
-              <!--  -->
-              <!-- second row -->
             </div>
             <div class="row mb-3">
-              <div class="col col-md col-lg me-2">
+              <div class="col col-md col-lg my-2">
                 <input
                   type="tel"
                   placeholder="Telephone"
                   class="form-control form-control-lg"
                 />
               </div>
-              <div class="col col-md col-lg">
+              <div class="col col-md col-lg my-2">
                 <select name="select" id="#" class="form-select form-select-lg">
                   <option
                     selected
@@ -146,7 +143,7 @@
                     une personne
                   </option>
                   <option value="2" aria-placeholder="nombre de personne">
-                    deux personne
+                    deux personnes
                   </option>
                   <option value="3" aria-placeholder="nombre de personne">
                     trois personnes
@@ -160,25 +157,28 @@
                 </select>
               </div>
             </div>
+
             <!-- fin du second -->
             <!--  -->
             <!-- troisieme row -->
             <div class="row mb-3">
-              <div class="col col-md col-lg me-2">
+              <div class="col col-md col-lg my-2">
                 <input
                   type="date"
                   placeholder="jj/mm/annee"
                   class="form-control form-control-lg text-color"
                 />
               </div>
-              <div class="col col-md col-lg">
+              <div class="col col-md col-lg my-2">
                 <input type="time" class="form-control form-control-lg" />
               </div>
               <!-- _________ -->
             </div>
             <!-- fin troisieme row -->
             <!-- button -->
-            <div class="d-grid col-5 mt-5 offset-md-3 mx-auto">
+            <div
+              class="d-grid col-5 mt-5 justify-content-center offset-md-3 mx-auto"
+            >
               <button class="btn-reservation" type="button">RESERVER</button>
             </div>
             <!-- fin button -->
