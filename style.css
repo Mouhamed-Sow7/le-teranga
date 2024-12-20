@@ -43,8 +43,37 @@
   position: relative;
   z-index: 1;
 }
+.button_reserver{
+  background: #9f1b32;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button_reserver:hover{
+  /* background: #fff; */
+  border: 1px solid #957979;
+  
+  box-shadow: 0 0 12px #f2c;
 
-/* Debut Section galeri  */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button_commander{
+  background: #ffff;
+  border: none;
+  color: #9f1b32;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button_commander:hover{
+  border: 1px solid #957979;
+  box-shadow: 0 0 12px #f2c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ 
+/* Debut Section galerie  */
 
 .section-galerie{
   margin: 28px auto;
@@ -84,8 +113,10 @@
 }
 
 .card:hover{
-  width: 30%;
-  margin: 20px  auto;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #dd7119;
+  box-shadow: 0 0 14px #9f1b32;
    
 }
 .card img{
@@ -108,10 +139,11 @@
 }
 /* Fin Section galerie  */
 /* section de reservation */
-.reservation h1 {
+.entete-reservation h1 {
   color: #9f1b32;
   text-align: center;
   justify-content: center;
+  text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
@@ -159,11 +191,18 @@
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
-  .reservation h1 {
-      font-size: 30px;
-  }
+/* debut section menu */
+.section-menu{
+  margin: 28px auto;
+  text-align: center;
+  
 }
+.titre-menu{
+color: #9f1b32;
+font-weight: bold;
+text-transform: uppercase;
+}
+
 /* Section entre l'introduction et les plats */
 .plats-du-jour {
   text-align: center;
@@ -201,13 +240,18 @@
 }
 
 .dish img {
-  width: 80%;
+  width: 90%;
   height: 90%;
 
   object-fit: cover;
   border-radius: 10px;
 }
-
+.dish img:hover{
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #9f1b32;
+  box-shadow: 0 0 14px #9f1b32;
+}
 .dish-info {
   margin-top: 10px;
 }
@@ -240,7 +284,7 @@ button:hover {
   }
 
   .reservation h1 {
-    font-size: 60px; /* Réduit la taille pour les petits écrans */
+    font-size: 40px; /* Réduit la taille pour les petits écrans */
   }
 
   .btn-reservation {
@@ -263,3 +307,4 @@ button:hover {
     height: auto; /* Maintient le ratio d'aspect */
   }
 }
+/* debut section menu */
