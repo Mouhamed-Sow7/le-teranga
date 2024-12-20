@@ -76,7 +76,7 @@
 /* Debut Section galerie  */
 
 .section-galerie{
-  margin: 28px auto;
+  margin: 20px auto;
 }
 .titre-container{
   background: hsla(0, 0%, 59%, 0.72);
@@ -113,7 +113,7 @@
 }
 
 .card:hover{
-  width: 90%;
+  width: 30%;
   padding: 20px;
   border: 1px solid #dd7119;
   box-shadow: 0 0 14px #9f1b32;
@@ -124,11 +124,15 @@
   object-fit: fill;
 }
 @media screen and (max-width:576px) {
+  .section-galerie{
+    width:100%;
+    margin: 12px auto;
+  }
   .card{
       width: 50%;
    }
    .card:hover{
-      width: 49%;
+      width: 40%;
       margin: 20px  auto;
        
    }
@@ -136,6 +140,7 @@
       width: 100%;
       object-fit: cover;
    }
+   
 }
 /* Fin Section galerie  */
 /* section de reservation */
@@ -156,7 +161,6 @@
 .reservation p {
   font-family: "Lora", sans-serif;
   font-size: 20px;
-  /* letter-spacing: 6%; */
   text-align: center;
   font-weight: 600;
 }
