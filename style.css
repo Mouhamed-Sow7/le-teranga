@@ -102,8 +102,7 @@
 /* section de reservation */
 .reservation h1 {
   color: #9f1b32;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 .reservation p {
