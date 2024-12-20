@@ -82,18 +82,7 @@
   position: relative;
    
 }
-.card::after{
-  content: '';
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  background: red;
-  top: 0px;
-  left: 26px;
-  translate: (-40%, -50%);
-  z-index: -1;
-  padding: 3px;
-}
+
 .card:hover{
   width: 30%;
   margin: 20px  auto;
@@ -121,9 +110,7 @@
 /* section de reservation */
 .reservation h1 {
   color: #9f1b32;
-  font-size: 95px;
   text-align: center;
-  letter-spacing: 6%;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
