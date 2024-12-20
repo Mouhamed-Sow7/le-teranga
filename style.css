@@ -43,99 +43,94 @@
   position: relative;
   z-index: 1;
 }
-.button_reserver{
+.button_reserver {
   background: #9f1b32;
   border: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
 }
-.button_reserver:hover{
+.button_reserver:hover {
   /* background: #fff; */
   border: 1px solid #957979;
-  
+
   box-shadow: 0 0 12px #f2c;
 
   text-transform: uppercase;
   font-weight: bold;
 }
-.button_commander{
+.button_commander {
   background: #ffff;
   border: none;
   color: #9f1b32;
   text-transform: uppercase;
   font-weight: bold;
 }
-.button_commander:hover{
+.button_commander:hover {
   border: 1px solid #957979;
   box-shadow: 0 0 12px #f2c;
   text-transform: uppercase;
   font-weight: bold;
 }
- 
+
 /* Debut Section galerie  */
 
-.section-galerie{
+.section-galerie {
   margin: 28px auto;
 }
-.titre-container{
+.titre-container {
   background: hsla(0, 0%, 59%, 0.72);
   border-radius: 18px;
 }
 
-.h1-galerie{
+.h1-galerie {
   color: #9f1b32;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-
 }
-.slogan-galerie{
+.slogan-galerie {
   text-align: center;
   font-family: "Lora", sans-serif;
   padding: 18px;
 }
 
-.galerie{
-  display: flex ;
- 
+.galerie {
+  display: flex;
 }
 
-.card{
+.card {
   width: 33%;
-  margin: 20px  auto;
+  margin: 20px auto;
   border: 1px solid #ffd9;
   box-shadow: 0 0 14px #ffd8;
   gap: 10px;
   position: relative;
-   
 }
 
-.card:hover{
+.card:hover {
   width: 90%;
   padding: 20px;
   border: 1px solid #dd7119;
   box-shadow: 0 0 14px #9f1b32;
-   
 }
-.card img{
+.card img {
   width: 100%;
   object-fit: fill;
 }
-@media screen and (max-width:576px) {
-  .card{
-      width: 50%;
-   }
-   .card:hover{
-      width: 49%;
-      margin: 20px  auto;
-       
-   }
-   .card img{
-      width: 100%;
-      object-fit: cover;
-   }
+@media screen and (max-width: 576px) {
+  .card {
+    width: 50%;
+  }
+  .card:hover {
+    width: 49%;
+    margin: 20px auto;
+  }
+  .card img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 /* Fin Section galerie  */
 /* section de reservation */
@@ -192,15 +187,14 @@
   align-items: center;
 }
 /* debut section menu */
-.section-menu{
+.section-menu {
   margin: 28px auto;
   text-align: center;
-  
 }
-.titre-menu{
-color: #9f1b32;
-font-weight: bold;
-text-transform: uppercase;
+.titre-menu {
+  color: #9f1b32;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Section entre l'introduction et les plats */
@@ -208,7 +202,7 @@ text-transform: uppercase;
   text-align: center;
   margin: 30px 0;
   padding: 20px;
-  color: #8C1538; /* Couleur du texte en #8C1538 */
+  color: #8c1538; /* Couleur du texte en #8C1538 */
 }
 
 .plats-du-jour h2 {
@@ -236,7 +230,6 @@ text-transform: uppercase;
   flex-direction: column;
   align-items: center;
   margin-top: 19px;
- 
 }
 
 .dish img {
@@ -246,7 +239,7 @@ text-transform: uppercase;
   object-fit: cover;
   border-radius: 10px;
 }
-.dish img:hover{
+.dish img:hover {
   width: 90%;
   padding: 20px;
   border: 1px solid #9f1b32;
@@ -256,12 +249,13 @@ text-transform: uppercase;
   margin-top: 10px;
 }
 
-.dish-info h3, .dish-info p {
+.dish-info h3,
+.dish-info p {
   margin: 5px 0;
 }
 
 button {
-  background-color: #8C1538;
+  background-color: #8c1538;
   color: #fff;
   border: none;
   padding: 10px 20px;
