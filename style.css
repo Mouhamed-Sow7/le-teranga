@@ -55,7 +55,7 @@
 }
 
 .h1-galerie{
-  color: #a52a2a;
+  color: #9f1b32;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -111,21 +111,20 @@
 .reservation h1 {
   color: #9f1b32;
   text-align: center;
-  font-weight: 700;
+  justify-content: center;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 .MENU h1 {
   color: #9f1b32;
-  font-size: 95px;
   text-align: center;
-  letter-spacing: 6%;
-  font-weight: 700;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 .reservation p {
   font-family: "Lora", sans-serif;
   font-size: 20px;
-  letter-spacing: 6%;
+  /* letter-spacing: 6%; */
   text-align: center;
   font-weight: 600;
 }
@@ -159,6 +158,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .reservation h1 {
+      font-size: 30px;
+  }
 }
 /* Section entre l'introduction et les plats */
 .plats-du-jour {
