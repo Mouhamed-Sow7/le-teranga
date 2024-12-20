@@ -69,30 +69,102 @@
         <p class="lead">Là où goût et tradition sont à la rencontre</p>
         <div class="divider"></div>
         <div class="mt-4">
-          <a href="#" class="btn btn-primary btn-lg me-2"
-            >Réserver <i class="bi bi-arrow-right-circle"></i
+          <a href="#" class="btn btn-hero btn-primary btn-lg button_reserver me-2"
+            >reserver <i class="bi bi-arrow-right-circle"></i
           ></a>
-          <a href="#" class="btn btn-secondary btn-lg"
+          <a href="#" class="btn btn-hero btn-secondary btn-lg button_commander"
             >Commander <i class="bi bi-arrow-right-circle"></i
           ></a>
         </div>
       </div>
     </section>
+    <!-- SECTION MENUE-->
+   <section class="section-menu">
+    <div class="container-fluid">
+      <div>
+        <h1 class="display-1 titre-menu">menu</h1>
+      </div>
+    <div class="dishes">
+      
+      <div class="dish">
+        <img src="/assets/img/garba.jpg" alt="Garba">
+        <div class="dish-info">
+          <h3>Garba</h3>
+          <p>6500 fca</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="/assets/img/riz au poisson.jpg" alt="Riz au poisson rouge" >
+        <div class="dish-info">
+          <h3>Riz  poisson rouge</h3>
+          <p>6500 fca</p>
+          <button>Commander</button>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="/assets/img/alloco.jpg" alt="Alloco Poisson">
+        <div class="dish-info">
+          <h3>Alloco Poisson</h3>
+          <p>6500 fca</p>
+          <button>Commander</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>
+    <!-- Debut section galerie -->
+    <section class="section-galerie">
+      <div class="container-fluid">
+        <div class="titre-container">
+            <h1 class="h1-galerie display-1">Galerie</h1>
+            <p class="slogan-galerie">
+               Voici une gallerie de  plats de notre restaurant pour vous donner un avant gout des nos services venez nombreux vous servir avec un service de qualité qui allie ampatie et respect du client. <span>Chez teranga Le client est Roi</span>
+            </p>
+            
+        </div>
+    <!-- galerie photos -->
+        <div class="row galerie">
+           <div class="col-sm-6 col-md-4 col-lg-4 card">
+            <img src="./assets/img/food4 1.png" alt="">
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-4 card">
+            <img src="./assets/img/food5 1.png" alt="">
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-4 card">
+            <img src="./assets/img/food9 1.png" alt="">
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-4 card">
+            <img src="./assets/img/serveur.png" alt="">
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-4 card">
+            <img src="./assets/img/Recette-de-Yassa-au-poulet 1.png" alt="">
+           </div>
+           <div class="col-sm-6 col-md-4 col-lg-4 card">
+            <img src="./assets/img/restaurant-ceiling 1.png" alt="">
+           </div>
+        </div>
+    </div>
+    </section>
+    <!--Fin section galerie -->
+
     <!--la partie de reservation  -->
     <section class="reservation">
       <!-- essayer de revoir la partie responsive aussi -->
       <div class="container">
         <!-- titre -->
-        <h1 class="text-center display-1">RESERVATION</h1>
+       <div class="entete-reservation">
+        <h1 class="display-1">reservation</h1>
         <p>
           Une experience culinaire inoubliable inspiré des traditions locales .
           Nous proposons de repas tres delicieux . Une fois gouter votre appetie
           sera insatiable
         </p>
+       </div>
         <!-- titre -->
         <!-- _________________________________ -->
         <!-- une ligne -->
-        <form class="row box-reservation">
+        <form class="box-reservation">
           <!-- colonne 1 de cette row/ligne -->
           <div class="col col-md-4 col-xl-4 left-box">
             <img
@@ -106,31 +178,34 @@
           <!-- colonne 2 imbriquant 3 lignes/row.... -->
           <div class="col col-md-8 col-lg-8 right-box">
             <!-- premiere row -->
-            <div class="row mb-3">
-              <div class="col col-md col-lg my-2">
+            <div class="row mb-3 col">
+              <div class="col col-md col-lg me-2">
                 <input
                   type="text"
                   placeholder="Nom et Prenom "
                   class="form-control form-control-lg"
                 />
               </div>
-              <div class="col col-md col-lg my-2">
+              <div class="col col-md col-lg">
                 <input
                   type="email"
                   placeholder="Adresse Email"
                   class="form-control form-control-lg"
                 />
               </div>
+              <!-- fin du premier row -->
+              <!--  -->
+              <!-- second row -->
             </div>
             <div class="row mb-3">
-              <div class="col col-md col-lg my-2">
+              <div class="col col-md col-lg me-2">
                 <input
                   type="tel"
                   placeholder="Telephone"
                   class="form-control form-control-lg"
                 />
               </div>
-              <div class="col col-md col-lg my-2">
+              <div class="col col-md col-lg">
                 <select name="select" id="#" class="form-select form-select-lg">
                   <option
                     selected
@@ -143,7 +218,7 @@
                     une personne
                   </option>
                   <option value="2" aria-placeholder="nombre de personne">
-                    deux personnes
+                    deux personne
                   </option>
                   <option value="3" aria-placeholder="nombre de personne">
                     trois personnes
@@ -157,28 +232,25 @@
                 </select>
               </div>
             </div>
-
             <!-- fin du second -->
             <!--  -->
             <!-- troisieme row -->
             <div class="row mb-3">
-              <div class="col col-md col-lg my-2">
+              <div class="col col-md col-lg me-2">
                 <input
                   type="date"
                   placeholder="jj/mm/annee"
                   class="form-control form-control-lg text-color"
                 />
               </div>
-              <div class="col col-md col-lg my-2">
+              <div class="col col-md col-lg">
                 <input type="time" class="form-control form-control-lg" />
               </div>
               <!-- _________ -->
             </div>
             <!-- fin troisieme row -->
             <!-- button -->
-            <div
-              class="d-grid col-5 mt-5 justify-content-center offset-md-3 mx-auto"
-            >
+            <div class="d-grid col-5 mt-5 offset-md-3 mx-auto">
               <button class="btn-reservation" type="button">RESERVER</button>
             </div>
             <!-- fin button -->
