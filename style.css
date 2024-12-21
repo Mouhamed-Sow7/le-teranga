@@ -78,7 +78,7 @@
 .section-galerie {
   margin: 28px auto;
 }
-.titre-container {
+.jumbotron {
   background: hsla(0, 0%, 59%, 0.72);
   border-radius: 18px;
 }
@@ -107,17 +107,24 @@
   box-shadow: 0 0 14px #ffd8;
   gap: 10px;
   position: relative;
+  background: rgba(100, 180, 19, .4);
 }
 
 .card:hover {
-  width: 33%;
+  width: 25%;
   padding: 20px;
   border: 1px solid #dd7119;
   box-shadow: 0 0 14px #9f1b32;
+  background: rgba(100, 180, 19, .4);
+  transition: 0.5s;
 }
+ 
+
 .card img {
   width: 100%;
   object-fit: fill;
+  background: rgba(100, 180, 19, .4);
+
 }
 @media screen and (max-width: 576px) {
   .card {
