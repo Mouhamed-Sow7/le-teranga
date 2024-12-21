@@ -107,7 +107,7 @@
   box-shadow: 0 0 14px #ffd8;
   gap: 10px;
   position: relative;
-  background: rgba(100, 180, 19, .4);
+  background: rgba(100, 180, 19, 0.4);
 }
 
 .card:hover {
@@ -115,16 +115,14 @@
   padding: 20px;
   border: 1px solid #dd7119;
   box-shadow: 0 0 14px #9f1b32;
-  background: rgba(100, 180, 19, .4);
+  background: rgba(100, 180, 19, 0.4);
   transition: 0.5s;
 }
- 
 
 .card img {
   width: 100%;
   object-fit: fill;
-  background: rgba(100, 180, 19, .4);
-
+  background: rgba(100, 180, 19, 0.4);
 }
 @media screen and (max-width: 576px) {
   .card {
@@ -187,11 +185,7 @@
 .text-color:focus {
   color: #957979;
 }
-.box-reservation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 /* debut section menu */
 .section-menu {
   margin: 28px auto;
@@ -280,7 +274,8 @@ button:hover {
   }
 
   .hero-section h1 {
-    font-size: 24px; /* Réduit la taille du texte */
+    font-size: 24px;
+    /* Réduit la taille du texte */
   }
 
   .reservation h1 {
