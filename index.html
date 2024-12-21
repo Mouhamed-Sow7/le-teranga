@@ -118,7 +118,7 @@
       </div>
     </section>
     <!-- Debut section galerie -->
-     
+
     <section class="section-galerie">
       <div class="container-fluid">
         <!-- <div class="titre-container">
@@ -132,11 +132,13 @@
         </div> -->
         <div class="jumbotron slogan-galerie text-center jumbotron-fluid">
           <div class="container">
-            <h1 class=" h1-galerie display-4">Galerie</h1>
-            <p class="lead">  Voici une gallerie de plats de notre restaurant pour vous donner un
-              avant gout des nos services venez nombreux vous servir avec un
-              service de qualité qui allie ampatie et respect du client.
-              Chez teranga Le client est Roi.</p>
+            <h1 class="h1-galerie display-4">Galerie</h1>
+            <p class="lead">
+              Voici une gallerie de plats de notre restaurant pour vous donner
+              un avant gout des nos services venez nombreux vous servir avec un
+              service de qualité qui allie ampatie et respect du client. Chez
+              teranga Le client est Roi.
+            </p>
           </div>
         </div>
         <!-- galerie photos -->
@@ -163,14 +165,10 @@
       </div>
     </section>
 
-
     <!--Fin section galerie -->
 
     <!--la partie de reservation  -->
-   
 
-
-   
     <section class="reservation">
       <!-- essayer de revoir la partie responsive aussi -->
       <div class="container">
@@ -185,29 +183,36 @@
         </div>
         <!-- titre -->
         <!-- _________________________________ -->
+
         <!-- une ligne -->
-     
-          <!-- colonne 1 de cette row/ligne -->
+
+        <!-- row principale qui englobe l'image et le form -->
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 col-md-4 col-sm-12 left-box">
-            <img
-              src="assets/img/chef.png"
-              class="img-fluid mb-3"
-              alt=""
-            />
+            <img src="assets/img/chef.png" class="img-fluid mb-3" alt="" />
           </div>
 
-          <div class="col-lg-8 col-md-8 col-sm-12 ">
-            <form class="row  ">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <form class="row">
+              <!-- first row avec nom-prenom et mail -->
               <div class="row">
                 <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
                   <input
-                  type="text"
-                  placeholder="Nom et Prenom "
-                  class="form-control form-control-lg"
-                />
+                    type="text"
+                    placeholder="Nom et Prenom "
+                    class="form-control form-control-lg"
+                  />
                 </div>
-
+                <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
+                  <input
+                    type="email"
+                    placeholder="Adresse Email"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+              </div>
+              <!-- second row avec tel et select(nombre) -->
+              <div class="row">
                 <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
                   <input
                     type="number"
@@ -215,12 +220,12 @@
                     class="form-control form-control-lg"
                   />
                 </div>
-              </div> 
-
-
-              <div class="row">
                 <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
-                  <select name="select" id="#" class="form-select form-select-lg">
+                  <select
+                    name="select"
+                    id="#"
+                    class="form-select form-select-lg"
+                  >
                     <option
                       selected
                       value="1"
@@ -245,36 +250,32 @@
                     </option>
                   </select>
                 </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 ">
+              </div>
+              <!-- third row pour date et time -->
+              <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
+                  <input
+                    type="date"
+                    placeholder="jj/mm/annee"
+                    class="form-control form-control-lg text-color"
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
                   <input type="time" class="form-control form-control-lg" />
                 </div>
               </div>
-
-
-
+              <!-- fourth row  pour le bouton-->
               <div class="row">
-                <div class="col-md-6 col-lg-6 col-sm-12 mb-3 ">
-                  <input
-                    type="email"
-                    placeholder="Adresse Email"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
-                  <input
-                  type="date"
-                  placeholder="jj/mm/annee"
-                  class="form-control form-control-lg text-color"
-                />
-                </div>
-              </div>
-
-              <div class="row ">
-                <button class="btn-reservation col-lg-4 col-md-6 col-sm-12   mx-auto " type="button">RESERVER</button>
+                <button
+                  class="btn-reservation col-lg-4 col-md-6 col-sm-12 mx-auto"
+                  type="button"
+                >
+                  RESERVER
+                </button>
               </div>
             </form>
           </div>
-        </div>  
+        </div>
       </div>
     </section>
     <script
