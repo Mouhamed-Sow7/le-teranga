@@ -165,12 +165,7 @@
       </div>
     </section>
 
-    <!--Fin section galerie -->
-
-    <!--la partie de reservation  -->
-
     <section class="reservation">
-      <!-- essayer de revoir la partie responsive aussi -->
       <div class="container">
         <!-- titre -->
         <div class="entete-reservation">
@@ -181,12 +176,6 @@
             appetie sera insatiable
           </p>
         </div>
-        <!-- titre -->
-        <!-- _________________________________ -->
-
-        <!-- une ligne -->
-
-        <!-- row principale qui englobe l'image et le form -->
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 col-md-4 col-sm-12 left-box">
             <img src="assets/img/chef.png" class="img-fluid mb-3" alt="" />
@@ -251,7 +240,6 @@
                   </select>
                 </div>
               </div>
-              <!-- third row pour date et time -->
               <div class="row mx-auto">
                 <div class="col-md-6 col-lg-6 col-sm-12 mb-3">
                   <input
@@ -264,7 +252,6 @@
                   <input type="time" class="form-control form-control-lg" />
                 </div>
               </div>
-              <!-- fourth row  pour le bouton-->
               <div class="row mx-auto mt-2">
                 <button
                   class="btn-reservation col-lg-4 col-md-6 col-sm-12 mx-auto"
@@ -278,6 +265,56 @@
         </div>
       </div>
     </section>
+    
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <h1 class="text-center mb-4">CONTACT</h1>
+        <p class="text-center mb-5">
+          Vous pouvez nous joindre à travers nos différents canaux de communication
+        </p>
+        <form action="" method="" class="row g-3">
+          
+          <div class="col-12 col-md-6">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nom et prénom*"
+              required
+              class="form-control mb-5"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Adresse email*"
+              required
+              class="form-control mb-5"
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Téléphone*"
+              required
+              class="form-control "
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <textarea
+              name="message"
+              placeholder="Message..."
+              required
+              class="form-control"
+              rows="8"
+            ></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-danger px-4 py-2">
+              ENVOYEZ
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
