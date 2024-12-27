@@ -316,23 +316,23 @@ button:hover {
   }
 
   .reservation h1 {
-    font-size: 40px; /* Réduit la taille pour les petits écrans */
+    font-size: 40px;
   }
 
   .btn-reservation {
-    padding: 15px; /* Ajuste le padding */
-    font-size: 16px; /* Réduit la taille de la police */
+    padding: 15px;
+    font-size: 16px;
   }
 
   .dishes {
-    flex-direction: column; /* Empile les plats verticalement */
-    align-items: center; /* Centre les éléments */
+    flex-direction: column;
+    align-items: center;
   }
 
   .dish {
     flex: 1 1 100%;
-    /* Les plats prennent toute la largeur */
-    margin-top: 10px; /* Ajuste la marge */
+
+    margin-top: 10px;
   }
 
   .dish .img-alloco,
@@ -344,4 +344,25 @@ button:hover {
     width: 60%;
   }
 }
-/* debut section menu */
+.contact-section {
+  background-image: url("./assets/img/food1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px 15px;
+}
+
+textarea.form-control {
+  resize: none;
+  min-height: 150px;
+}
+
+.btn-danger {
+  background-color: #a12028;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #870d1c;
+}
