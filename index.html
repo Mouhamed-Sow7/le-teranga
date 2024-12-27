@@ -10,6 +10,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Le Téranga</title>
   </head>
   <body>
@@ -88,7 +91,7 @@
         </div>
         <div class="dishes">
           <div class="dish">
-            <img src="/assets/img/garba2.jpg" alt="Garba" />
+            <img class="img-garba" src="/assets/img/garba2.jpg" alt="Garba" />
             <div class="dish-info">
               <h3>Garba</h3>
               <p>4500 fca</p>
@@ -107,7 +110,11 @@
             </div>
           </div>
           <div class="dish">
-            <img src="/assets/img/alloco poisson.jpg" alt="Alloco Poisson" />
+            <img
+              class="img-alloco"
+              src="/assets/img/alloco poisson.jpg"
+              alt="Alloco Poisson"
+            />
             <div class="dish-info">
               <h3>Alloco Poisson</h3>
               <p>3500 fca</p>
@@ -121,15 +128,6 @@
 
     <section class="section-galerie">
       <div class="container-fluid">
-        <!-- <div class="titre-container">
-          <h1 class="h1-galerie display-1">Galerie</h1>
-          <p class="slogan-galerie">
-            Voici une gallerie de plats de notre restaurant pour vous donner un
-            avant gout des nos services venez nombreux vous servir avec un
-            service de qualité qui allie ampatie et respect du client.
-            <span>Chez teranga Le client est Roi</span>
-          </p>
-        </div> -->
         <div class="jumbotron slogan-galerie text-center jumbotron-fluid">
           <div class="container">
             <h1 class="h1-galerie display-4">Galerie</h1>
@@ -278,6 +276,56 @@
         </div>
       </div>
     </section>
+    <footer class="bg-dark footer">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-between flex-sm-wrap">
+          <div class="col-lg-4 col-sm-4 article-left my-5">
+            <article class="text-white d-flex flex-column py-2">
+              <h1 class="mb-3">A propos de nous</h1>
+              <div class="divider"></div>
+              <p class="mt-4 ps-1">
+                Qui sommes nous? <br />
+                Le teranga est un restaurant qui met au premier plan la culture
+                et la tradition de la gastronomie Africaine, en selectionnant
+                divers plats de chaque pays du continent mère.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 article-right my-5">
+            <article class="d-flex flex-column  py-2">
+              <h1 class="mb-3">Nos Contacts</h1>
+              <div class="divider"></div>
+             <div class="contact-footer d-flex flex-column pt-2">
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                contactleteranga@gmail.com
+              </p>
+               <p>
+                <i class="fa-solid fa-phone"></i> 
+                +221 781220391 / +221 773228453
+              </p>
+              <p>
+                <i class="fa-solid fa-map-marker-alt"></i> 
+                 Saint-louis, Senegal, BP:32000
+              </p>
+            </div>
+            </article>
+          </div>
+        </div>
+        <article class=" row d-flex justify-content-between flex-sm-wrap text-white py-2">
+          <p class="col-lg-4 col-md-4 col-sm-4">© 2024 Le Téranga. Designed by Team MD.MA.CD</p>
+          <div class=" col-lg-4  col-md-4 col-sm-4 chevron-up mb-3"><i class="fa-solid fa-angles-up"></i></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-between align-items-baseline ">
+            <p class="p-footer">Nous suivre :</p>
+            <div class="d-flex justify-content-between media-icon">
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </article>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
