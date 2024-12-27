@@ -316,6 +316,317 @@ button:hover {
   }
 
   .reservation h1 {
+    font-size: 40px; /* Réduit la taille pour les petits écrans */
+  }
+
+  .btn-reservation {
+    padding: 15px; /* Ajuste le padding */
+    font-size: 16px; /* Réduit la taille de la police */
+  }
+
+  .dishes {
+    flex-direction: column; /* Empile les plats verticalement */
+    align-items: center; /* Centre les éléments */
+  }
+
+  .dish {
+    flex: 1 1 100%;
+    /* Les plats prennent toute la largeur */
+    margin-top: 10px; /* Ajuste la marge */
+  }
+
+  .dish .img-alloco,
+  .dish .img-garba {
+    width: 80%; /* Rend l'image responsive */
+    height: auto; /* Maintient le ratio d'aspect */
+  }
+  .dish {
+    width: 60%;
+  }
+}
+/* debut section menu */
+
+/* ===============
+=== SUGESTIONS ===
+================*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar-nav {
+  display: flex;
+  gap: 30px; /* Espace entre les éléments */
+}
+
+.navbar {
+  background: #9f1b32 !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  text-transform: uppercase; /* Optionnel : pour styliser les liens */
+  font-weight: 500; /* Optionnel : pour une meilleure lisibilité */
+}
+
+.hero-section {
+  position: relative;
+  background-image: url(./assets/img/bg-img.jpg) !important;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(98vh - 7vh);
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(5px);
+  z-index: 0;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+.button_reserver {
+  background: #9f1b32;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button_reserver:hover {
+  /* background: #fff; */
+  border: 1px solid #957979;
+
+  box-shadow: 0 0 12px #f2c;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button_commander {
+  background: #ffff;
+  border: none;
+  color: #9f1b32;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button_commander:hover {
+  border: 1px solid #957979;
+  box-shadow: 0 0 12px #f2c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Debut Section galerie  */
+
+.section-galerie {
+  margin: 28px auto;
+}
+.jumbotron {
+  background: hsla(0, 0%, 59%, 0.72);
+  border-radius: 18px;
+}
+
+.h1-galerie {
+  color: #9f1b32;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.slogan-galerie {
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  padding: 18px;
+}
+
+.galerie {
+  display: flex;
+}
+
+.card {
+  width: 33%;
+  margin: 20px auto;
+  border: 1px solid #ffd9;
+  box-shadow: 0 0 14px #ffd8;
+  gap: 10px;
+  position: relative;
+  background: rgba(100, 180, 19, 0.4);
+}
+
+.card:hover {
+  width: 25%;
+  padding: 20px;
+  border: 1px solid #dd7119;
+  box-shadow: 0 0 14px #9f1b32;
+  background: rgba(100, 180, 19, 0.4);
+  transition: 0.5s;
+}
+
+.card img {
+  width: 100%;
+  object-fit: fill;
+  background: rgba(100, 180, 19, 0.4);
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 50%;
+  }
+  .card:hover {
+    width: 49%;
+    margin: 20px auto;
+  }
+  .card img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Fin Section galerie  */
+/* section de reservation */
+.entete-reservation h1 {
+  color: #9f1b32;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.MENU h1 {
+  color: #9f1b32;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.reservation p {
+  font-family: "Lora", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.btn-reservation {
+  background-color: #9f1b32;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  margin-bottom: 30px;
+}
+.btn-reservation:hover {
+  background-color: #741827;
+}
+.right-box input::placeholder {
+  color: #957979;
+}
+.right-box input,
+.right-box input:focus {
+  outline: #957979;
+}
+
+.right-box select {
+  color: #957979;
+}
+.text-color,
+.text-color:focus {
+  color: #957979;
+}
+
+/* debut section menu */
+.section-menu {
+  margin: 28px auto;
+  text-align: center;
+}
+.titre-menu {
+  color: #9f1b32;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Section entre l'introduction et les plats */
+.plats-du-jour {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  color: #8c1538; /* Couleur du texte en #8C1538 */
+}
+
+.plats-du-jour h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.plats-du-jour p {
+  font-size: 1.2rem;
+}
+
+/* Disposition des plats */
+.dishes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-color: #9f1b32;
+}
+
+.dish {
+  flex: 1 1 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 19px;
+}
+
+.dish img {
+  width: 90%;
+  height: 90%;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+.dish img:hover {
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #9f1b32;
+  box-shadow: 0 0 14px #9f1b32;
+}
+.dish-info {
+  margin-top: 10px;
+}
+
+.dish-info h3,
+.dish-info p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #8c1538;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a41742;
+}
+@media (max-width: 600px) {
+  .navbar-nav {
+    flex-direction: column; /* Empile les éléments de navigation */
+    gap: 15px; /* Réduit l'espace entre les éléments */
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+    /* Réduit la taille du texte */
+  }
+
+  .reservation h1 {
     font-size: 40px;
   }
 
@@ -331,17 +642,12 @@ button:hover {
 
   .dish {
     flex: 1 1 100%;
-
     margin-top: 10px;
   }
 
-  .dish .img-alloco,
-  .dish .img-garba {
-    width: 80%; /* Rend l'image responsive */
-    height: auto; /* Maintient le ratio d'aspect */
-  }
-  .dish {
-    width: 60%;
+  .dish img {
+    width: 100%;
+    height: auto;
   }
 }
 .contact-section {
