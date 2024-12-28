@@ -322,7 +322,161 @@ textarea.form-control {
 .btn-danger:hover {
   background-color: #870d1c;
 }
-/* footer section */
+/* Debut section slide */
+
+.slider-1 {
+  max-width: 600px;
+  margin: 100px auto;
+  overflow: hidden;
+  border: 1px solid #f1f111;
+}
+.slider-1 .slider {
+  display: flex;
+  animation: slider-1 15s infinite;
+}
+.slider-1 img {
+  background: #000;
+  flex-shrink: 0;
+  padding: 72px 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 54px;
+}
+@keyframes slider-1 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+/* fin section slide */
+
+/* Debut de la bonne section temoignage */
+
+.temoignage {
+  width: 100%;
+  background: #740707;
+  padding: 23px;
+}
+
+.div-slides {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.mon-slide {
+  display: flex;
+  animation: mon-slide 12s infinite ease-in-out;
+  overflow: hidden;
+}
+.titre-temoignage {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: bold;
+}
+.slidere-2 {
+  width: 500px;
+  text-align: center;
+  height: 370px;
+  background: #000000f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  padding: 23px auto;
+  margin: 16px auto;
+  position: relative;
+}
+
+.entete {
+  display: flex;
+  margin: 16px 18px;
+}
+.entete h5 {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.img-ronde {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  right: 42px;
+}
+.corps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.corps p {
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 auto;
+  position: absolute;
+  bottom: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .slidere-2 {
+    width: 300px;
+    background: #000000f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    position: relative;
+    font-size: 10px;
+  }
+  .corps p {
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 auto;
+    font-size: 10px;
+    position: absolute;
+    overflow: hidden;
+    margin: 1px;
+  }
+}
+
+@keyframes mon-slide {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-150%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  100% {
+    transform: translateX(-300%);
+  }
+}
+/* Fin de la bonne section temoignage */ /* footer section */
 .article-left {
   background-color: #9f1b32;
 }
