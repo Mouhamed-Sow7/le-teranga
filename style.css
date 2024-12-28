@@ -383,7 +383,7 @@ textarea.form-control {
 }
 .mon-slide {
   display: flex;
-  /* animation: mon-slide 12s infinite ease-in-out; */
+  animation: mon-slide 12s infinite ease-in-out;
   overflow: hidden;
 }
 .titre-temoignage {
@@ -469,11 +469,11 @@ textarea.form-control {
   }
   50%,
   70% {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
   75%,
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-600%);
   }
 }
 /* Fin de la bonne section temoignage */ /* footer section */
