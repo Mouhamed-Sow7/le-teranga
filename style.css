@@ -291,15 +291,13 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
-
-  .dish {
-    flex: 1 1 100%;
-    margin-top: 10px;
+  .dish .img-alloco,
+  .dish .img-garba {
+    width: 80%; /* Rend l'image responsive */
+    height: auto; /* Maintient le ratio d'aspect */
   }
-
-  .dish img {
-    width: 100%;
-    height: auto;
+  .dish {
+    width: 60%;
   }
 }
 .contact-section {
@@ -323,4 +321,40 @@ textarea.form-control {
 
 .btn-danger:hover {
   background-color: #870d1c;
+}
+/* footer section */
+.article-left {
+  background-color: #9f1b32;
+}
+.article-right {
+  background-color: white;
+}
+.article-left .divider {
+  width: 50px;
+  height: 4px;
+  background-color: white;
+}
+.article-right .divider {
+  width: 50px;
+  height: 4px;
+  background-color: #9f1b32;
+}
+.media-icon i {
+  color: #9f1b32;
+  font-size: 28px;
+  width: 40px;
+}
+.chevron-up {
+  background-color: #9f1b32;
+  font-size: 25px;
+  text-align: center;
+  width: 50px;
+  border: 2px solid #9f1b32;
+  /* padding: 5px; */
+  box-shadow: inset 0px 0px 0px 2px white;
+  box-sizing: border-box;
+}
+.p-footer {
+  /* margin-left: 35px; */
+  font-size: 23px;
 }
